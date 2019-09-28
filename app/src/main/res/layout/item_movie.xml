@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgv_movie_item"
+        android:scaleType="fitXY"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tv_title"
+        android:id="@+id/tv_title"
+        android:layout_toEndOf="@id/imgv_movie_item"
+        android:layout_marginStart="26dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tv_upload_date"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@id/imgv_movie_item"
+        android:layout_marginStart="26dp"
+        android:textSize="14sp"
+        android:id="@+id/tv_update_date"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tv_short_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="short description"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@id/imgv_movie_item"
+        android:layout_below="@id/tv_update_date"/>
+
+
+</RelativeLayout>
